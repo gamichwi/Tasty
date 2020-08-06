@@ -5,7 +5,7 @@ import "./App.css";
 const App = () => {
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
-  const [query, setQuery] = useState("chicken");
+  const [query, setQuery] = useState("");
 
   useEffect(() => {
     getRecipes();
@@ -26,8 +26,11 @@ const App = () => {
 
   const getSearch = (event) => {
     event.preventDefault();
-    setQuery(search);
-    setSearch("");
+    if(search !== ""){
+      setQuery(search);
+      setSearch("");
+    }
+
   };
 
   return (
@@ -37,7 +40,7 @@ const App = () => {
           className="search-bar"
           type="text"
           value={search}
-          placeholder="Enter an ingredient."
+          placeholder="Enter an ingredient..."
           onChange={updateSearch}
         />
         <button className="search-button" type="submit">
