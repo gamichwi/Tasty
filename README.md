@@ -1,1 +1,2 @@
-Recipe Search API
+## Tasty
+Simply search a free Recipe API for inspiration.
