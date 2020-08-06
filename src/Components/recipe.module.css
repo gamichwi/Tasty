@@ -9,5 +9,9 @@
     color:white;
     align-items: center;
     min-width:40%;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
+}
+
+.recipe img {
+    border-radius: 100px;
 }
