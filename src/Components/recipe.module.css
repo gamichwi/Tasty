@@ -16,3 +16,8 @@
 .recipe img {
     border-radius: 100px;
 }
+
+.recipe a {
+    color:white;
+    text-decoration:none;
+}
