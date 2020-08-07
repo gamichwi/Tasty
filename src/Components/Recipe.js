@@ -7,11 +7,11 @@ const Recipe = ({ title, calories, image, ingredients, url }) => {
             <h1><a href={url} target="_blank" rel="noopener noreferrer">{title}</a></h1>
             <ul>
                 {ingredients.map(ingredient => (
-                    <li key={ingredient.title}>{ingredient.text}</li>
+                    <li key={Math. random()}>{ingredient.text}</li>
                 ))}
             </ul>
             <p>{calories.toFixed(0)} calories</p>
-            <img src={image} alt={title}/>
+            <a href={url}><img src={image} alt={title}/></a>
         </div>
     );
 }
